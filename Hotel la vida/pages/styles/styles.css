@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+
+body {
+    color: #0a0f29;
+     /* background-image: url("C:\Users\ANTHONY\Desktop\realest\Hotel la vida\images\bg.png");
+    background-repeat: no-repeat, repeat; */
+    /* background-color: green;  */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-section{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url("../../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.nav-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+    z-index: 999;
+}
+
+.nav-bar img {
+    height: 20px;
+    margin-top: 30px;
+}
+
+.nav-bar i {
+    display: block;
+}
+
+.nav-bar ul {
+    display: none;
+    position: relative;
+    top: 20px;
+}
+
+
+.nav-bar > ul > li > a {
+    color: #f2f2f2;
+    display: block;
+
+}
+
+.menu-btn{
+        display:block;
+    }
+
+
+.button-text button {
+    
+    border:1px solid #c6922d;
+    border-radius: 7px;
+    padding: 8px 17px;
+}
+
+
+.nav-bar.mobile {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+.nav-bar.mobile .nav-img-container {
+      display: none;
+}
+  
+.nav-bar.mobile i {
+    color: white;
+}
+
+
+.nav-bar.mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    margin-top: 40px;
+    left: 35px;
+}
+
+
+.nav-bar.mobile li a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.nav-bar.mobile li {
+    border-bottom: 1px solid white;
+    border: none;
+    width: 80vw;
+}
+
+
+
+  @media screen and (min-width:420px) {
+
+    .menu-btn{
+        display:none;
+    }
+
+    .nav-bar.mobile li {
+      width:83vw;
+    }
+  }
+  @media screen and (min-width:518px) {
+
+    .menu-btn{
+        display:none;
+    }
+
+    .nav-bar.mobile li {
+      width:88vw;
+    }
+  }
+  .nav-bar.mobile i {
+    /* position: fixed; */
+    display: none;
+    top: 3%;
+    right: 4.5%;
+  }
+
+  @media screen and (min-width: 769px) {
+
+    .menu-btn{
+        display:none;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        margin-right: 60px;
+        padding: 20px;
+        gap: 30px;
+        position: static;
+        top: 0;
+    }
+}
