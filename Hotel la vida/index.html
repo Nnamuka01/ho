@@ -4,18 +4,72 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="/pages/styles/styles.css">
-	<link rel="stylesheet" href="/pages/styles/homepage.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-	<link rel="icon" type="image/x-icon" href="images/Logo.png">
-	<script src="https://kit.fontawesome.com/a88b71ef58.js" crossorigin="anonymous"></script>
 	<title>Hotel la Vida</title>
+	<link rel="icon" type="image/x-icon" href="images/Logo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+	<!-- FOR THE MENUBAR ANIMATION -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+
+	<link rel="stylesheet" href="css/main.css">	
 </head>
 
 
 <body>
+ 
+
+	<header class="header">
+		<!-- NAVBAR SECTION -->
+		<nav class="navbar">
+			<!-- ICON SECTION -->
+			<a href="#" class="nav-icon">
+				<img src="images/Logo.png" alt="" class="icon">
+				<h3>Hotel la Vida</h3>
+			</a>
+
+			<!-- NAV LINKS SECTION -->
+			<ul class="nav-links animate__animated" id="nav-links">
+				<a class="nav-link" href="home.html"><li>Home</li></a>
+				<a class="nav-link" href="book.html"><li>Book Now</li></a>
+				<a class="nav-link" href="events.html"><li>Events</li></a>
+				<a class="nav-link" href="about.html"><li>About</li></a>
+				<a class="nav-link" href="contact.html"><li>Contact Us</li></a>
+				<li>
+				
+				<!-- NAV BUTTON SECTION -->
+				<div class="nav-btn">
+					<a href="signin.html">Sign Up</a>
+				</div>
+				
+				<!-- CLOSE MENU BUTTON -->
+				<i class="fa-solid fa-xmark menu-close" id="menu-close" onclick="closeMobileNav()"></i>	
+				</li>
+			</ul>
+
+
+
+			<!-- MENU ICON -->
+			<i class="fa-solid fa-bars menu-btn" id="menu-btn" onclick="showMobileNav()"></i>	
+		</nav>
+	</header>
     
-	<nav class="nav-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <nav class="nav-section">
 		<div id="navBar" class="nav-bar">
 			<div class="nav-img-container">
 				<img alt="Hotel la Vida" src="images/Logo.png">
@@ -40,7 +94,7 @@
 		<div class="change">
 			<h1>This is an example of another section for the nav</h1>
 		</div>
-	</nav> i understand
+	</nav> i understand -->
 <!-- 
     <h3>Welcome To <br> <span>Hotel La Vida</span></h3>
 		</div>
@@ -76,7 +130,8 @@
 
 
 
-    <script src="pages/js/index.js"></script>
+	<script src="https://kit.fontawesome.com/a88b71ef58.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
